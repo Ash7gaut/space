@@ -122,7 +122,13 @@ body {
   border-radius: 50%;
   width: 600px;
   height: 600px;
+}
+
+.ceeeentre {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   position: absolute;
-  left: 55vw;
-  top: 70vh;
+  top: 60vh;
+  left: 0;
 }
