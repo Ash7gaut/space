@@ -11,7 +11,7 @@ gsap.fromTo(
       pin: "#test-2",
       start: "top 0%",
       end: "bottom 0%",
-      // markers: true,
+      markers: true,
       scrub: 1,
     },
   }
@@ -115,3 +115,26 @@ gsap.fromTo(
     },
   }
 );
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Sélectionnez tous les boutons et toutes les pop-ups par leurs identifiants ou classes
+  var popupBtns = document.querySelectorAll(".popup-btn");
+  var popups = document.querySelectorAll(".popup-content");
+
+  // Ajoutez des gestionnaires d'événements à chaque bouton
+  popupBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      // Récupérez les informations associées au bouton
+      var popupId = btn.getAttribute("data-popup");
+      var embedId = btn.getAttribute("data-embed");
+
+      // Affichez la pop-up correspondante
+      var popup = document.getElementById(popupId);
+      popup.style.display = "block";
+
+      // Cacher l'embed associé
+      var embed = document.getElementById(embedId);
+      embed.style.display = "none";
+    });
+  });
+});

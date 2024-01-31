@@ -4,20 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="desktop/style.css" rel="stylesheet" />
   </head>
   <body>
+    <a href="test-mobile.html">Mobile</a>
     <div id=""></div>
     <div id="test"></div>
-    <div id="test-2">
-      <h2>Atelier 1</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
-        tempora aliquam blanditiis sit non. Quibusdam quod recusandae iste non
-        eveniet, ex, saepe animi, quam nobis dignissimos magnam magni ipsum
-        quis.
-      </p>
-    </div>
+    <div id="test-2"></div>
     <div id="test-3">
       <h2>Atelier 2</h2>
       <p>
@@ -37,9 +30,19 @@
       />
     </div>
 
+    <button class="popup-btn" data-popup="popup-1" data-embed="test-2">
+      Afficher la pop-up 1
+    </button>
+    <button class="popup-btn" data-popup="popup-2" data-embed="test-3">
+      Afficher la pop-up 2
+    </button>
+
+    <div id="popup-1" class="popup-content"></div>
+    <div id="popup-2" class="popup-content"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+    <script src="desktop/script.js"></script>
   </body>
 </html>

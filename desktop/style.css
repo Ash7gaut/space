@@ -120,8 +120,8 @@ body {
 
 .sun {
   border-radius: 50%;
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
 }
 
 .ceeeentre {
@@ -131,4 +131,10 @@ body {
   position: absolute;
   top: 60vh;
   left: 0;
+}
+
+embed {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

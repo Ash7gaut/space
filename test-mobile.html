@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile</title>
+    <link href="mobile/css-mobile.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="all">
+      <div class="tn">
+        <div class="title">
+          <h1>Digital Event</h1>
+        </div>
+        <div class="nebul">
+          <img
+            class="nebula"
+            src="https://dailyscience.be/NEW/wp-content/uploads/2023/08/STScI-01H82GANSY85GHFY3Y2FN9R65P-bis-.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="pres">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+          autem earum consequuntur numquam iure delectus iste!
+        </p>
+      </div>
+
+      <div class="extras">
+        <div class="inputs">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column1">
+        <embed src="snippet.html" type="text/html" width="100%" height="100%" />
+      </div>
+
+      <div class="column2">
+        <img
+          class="earth"
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Populated_Planet.png"
+          alt="Planète peuplée"
+        />
+        <div>
+          <a id="embedButton" href="#popup1">en savoir plus</a>
+        </div>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Here i am</h2>
+            <a class="close" href="#">×</a>
+            <div class="content">
+              <embed
+                type="image/jpeg"
+                src="https://cdn.futura-sciences.com/sources/images/actu/position-jupiter-saturne.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="mobile/script-mobile.js"></script>
+  </body>
+</html>
